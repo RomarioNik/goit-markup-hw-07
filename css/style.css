@@ -123,7 +123,7 @@ button {
 
 /* menu */
 
-.menu {
+.header__menu {
   margin-right: auto;
 }
 
@@ -258,7 +258,10 @@ button {
   margin: 15px;
 }
 
-.achievements__thumb {
+.benefit {
+}
+
+.benefit__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,23 +272,13 @@ button {
   border-radius: 4px;
 }
 
-.achievements__icons {
+.benefit__icons {
 }
 
-.achievements__icon-antenna {
+.benefit__icon-antenna {
 }
 
-/* .achievements__item::before {
-  content: "";
-  display: block;
-  min-height: 120px;
-  margin-bottom: 30px;
-
-  background-color: #f5f4fa;
-  border-radius: 4px;
-} */
-
-.achievements__title {
+.benefit__title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -294,7 +287,7 @@ button {
   text-transform: uppercase;
 }
 
-.achievements__text {
+.benefit__text {
 }
 
 /* --------------- work ------------ */
@@ -325,14 +318,14 @@ button {
   margin-right: 30px;
 }
 
-.work__wrap-img {
+.application {
   position: relative;
 }
 
-.work__img {
+.application__img {
 }
 
-.work__backdrop {
+.application__backdrop {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -346,7 +339,7 @@ button {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.work__text {
+.application__text {
   font-weight: 700;
   line-height: calc(16 / 14);
   color: #ffffff;
@@ -387,37 +380,35 @@ button {
   background-color: var(--second-color);
 }
 
-.team__img {
+.member__img {
 }
 
-.team__name-title {
+.member__name-title {
   margin: 30px 0 10px 0;
 
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.3px;
-  /* text-align: center; */
 }
 
-.team__text {
+.member__text {
   margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.3px;
-  /* text-align: center; */
 }
 
-.team__list-social {
+.member__list {
+}
+
+.socials {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.team__item-social {
-}
-
-.team__link-social {
+.link-social {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -432,13 +423,13 @@ button {
   transition: color 250ms var(--base-transition), background-color 250ms var(--base-transition);
 }
 
-.team__link-social:hover,
-.team__link-social:focus {
+.link-social:hover,
+.link-social:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
 
-.team__icon-link-social {
+.link-social__icon {
   fill: currentColor;
 }
 
@@ -465,7 +456,7 @@ button {
 .clients__item {
 }
 
-.clients__link {
+.company-link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -480,13 +471,13 @@ button {
   transition: color 250ms var(--base-transition), border-color 250ms var(--base-transition);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.company-link:hover,
+.company-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
 
-.clients__icon-link {
+.company-link__icon {
   fill: currentColor;
 }
 
@@ -589,35 +580,35 @@ button {
   background-color: var(--accent-color);
 } */
 
-/* product */
+/* cards */
 
-.product {
+.cards {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
 
-.product__item {
+.cards__item {
   width: calc((100% - 90px) / 3);
   margin: 15px;
 
   background-color: var(--second-color);
 }
 
-.product__link {
+.product {
   display: block;
 
   transition: box-shadow 250ms var(--base-transition);
 }
 
-.product__link:hover,
-.product__link:focus {
+.product:hover,
+.product:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.product__link:hover .product__overlay,
-.product__link:focus .product__overlay {
+.product:hover .product__overlay,
+.product:focus .product__overlay {
   transform: translateY(0);
   opacity: 1;
 }
@@ -720,7 +711,7 @@ button {
   transition: transform 250ms var(--base-transition);
 }
 
-.modal__button-close {
+.callback-form__button-close {
   position: absolute;
   top: 0;
   right: 0;
@@ -743,16 +734,16 @@ button {
   transition: color 250ms var(--base-transition);
 }
 
-.modal__button-close:hover,
-.modal__button-close:focus {
+.callback-form__button-close:hover,
+.callback-form__button-close:focus {
   color: var(--accent-color);
 }
 
-.modal__svg-close {
+.callback-form__svg-close {
   fill: currentColor;
 }
 
-.modal__title {
+.callback-form__title {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -762,18 +753,18 @@ button {
   text-align: center;
 }
 
-.modal__label {
+.callback-form__label {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
 }
 
-.modal__input-wrap {
+.callback-form__input-wrap {
   position: relative;
   margin-bottom: 10px;
 }
 
-.modal__input {
+.callback-form__input {
   width: 100%;
   height: 40px;
   padding-top: 11px;
@@ -789,26 +780,26 @@ button {
   transition: border 250ms var(--base-transition);
 }
 
-.modal__input:focus {
+.callback-form__input:focus {
   border: 1px solid var(--accent-color);
 }
 
-.modal__input:not(:focus):not(:placeholder-shown):invalid {
+.callback-form__input:not(:focus):not(:placeholder-shown):invalid {
   border: 1px solid rgba(235, 16, 16, 0.781);
 }
 
-.modal__input-wrap:focus-within .modal__svg {
+.callback-form__input-wrap:focus-within .callback-form__svg {
   fill: var(--accent-color);
 }
 
-.modal__svg {
+.callback-form__svg {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
 }
 
-.modal__message {
+.callback-form__message {
   margin-bottom: 20px;
   padding: 12px 16px;
   width: 100%;
@@ -822,18 +813,18 @@ button {
   border-radius: 4px;
 }
 
-.modal__message:focus {
+.callback-form__message:focus {
   border: 1px solid var(--accent-color);
 }
 
-.modal__message::placeholder {
+.callback-form__message::placeholder {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal__label-checkbox {
+.callback-form__label-checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -846,7 +837,7 @@ button {
   user-select: none;
 }
 
-.modal__checkbox {
+.callback-form__checkbox {
   position: absolute;
 
   -webkit-appearance: none;
@@ -854,7 +845,7 @@ button {
   appearance: none;
 }
 
-.modal__icon-checkbox {
+.callback-form__icon-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -870,11 +861,11 @@ button {
   border-radius: 2px;
 }
 
-.modal__svg-check {
+.callback-form__svg-check {
   fill: currentColor;
 }
 
-/* .modal__checkbox:checked + .modal__icon-checkbox {
+/* .callback-form__checkbox:checked + .callback-form__icon-checkbox {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none"%3E%3Crect width="16" height="15" fill="%232196F3" rx="2"/%3E%3Cmask id="a" width="13" height="10" x="2" y="3" fill="%23000" maskUnits="userSpaceOnUse"%3E%3Cpath fill="%23fff" d="M2 3h13v10H2z"/%3E%3Cpath d="M6.496 10.312 3.888 7.824 3 8.665 6.496 12 14 4.841 13.118 4l-6.622 6.312Z"/%3E%3C/mask%3E%3Cpath fill="%23fff" d="M6.496 10.312 3.888 7.824 3 8.665 6.496 12 14 4.841 13.118 4l-6.622 6.312Z"/%3E%3Cpath stroke="%23fff" stroke-width=".4" d="M6.496 10.312 3.888 7.824 3 8.665 6.496 12 14 4.841 13.118 4l-6.622 6.312Z" mask="url(%23a)"/%3E%3C/svg%3E');
@@ -882,26 +873,26 @@ button {
   background-origin: border-box;
 }
 
-.modal__checkbox:focus + .modal__icon-checkbox {
+.callback-form__checkbox:focus + .callback-form__icon-checkbox {
   border: 2px solid var(--accent-color);
 } */
 
-.modal__checkbox:checked + .modal__icon-checkbox {
+.callback-form__checkbox:checked + .callback-form__icon-checkbox {
   border: none;
   background-color: var(--accent-color);
   color: #ffffff;
 }
 
-.modal__link-term {
+.callback-form__link-term {
   color: var(--accent-color);
   text-decoration: underline;
 }
 
-.modal__button-wrap {
+.callback-form__button-wrap {
   text-align: center;
 }
 
-.modal__button {
+.callback-form__button {
   padding: 10px 52px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

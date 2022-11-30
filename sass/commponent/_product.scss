@@ -1,21 +1,6 @@
-/* cards */
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-}
-
-.cards__item {
-  width: calc((100% - 90px) / 3);
-  margin: 15px;
-
-  background-color: $second-color;
-}
-
 .product {
   display: block;
-  transition: box-shadow 250ms $base-transition;
+  transition: box-shadow 250ms var(--base-transition);
 
   &:hover,
   &:focus {
@@ -29,9 +14,6 @@
   overflow: hidden;
 }
 
-// .product__img {
-// }
-
 .product__overlay {
   position: absolute;
   top: 0;
@@ -43,11 +25,10 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   opacity: 0;
-  transition: transform 250ms $base-transition, opacity 250ms $base-transition;
+  transition: transform 250ms var(--base-transition), opacity 250ms var(--base-transition);
 
   .product:hover &,
   .product:focus & {
@@ -82,5 +63,5 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.3px;
-  color: $text-color;
+  color: var(--text-color);
 }

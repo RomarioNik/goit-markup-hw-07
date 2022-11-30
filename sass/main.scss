@@ -1,0 +1,21 @@
+@import './base/variables';
+@import './vendors/normalize';
+
+@import './base/base';
+@import './layout/header';
+
+// index.html
+@import './components/section-banner';
+@import './components/section-achievements';
+@import './components/section-work';
+@import './components/section-team';
+@import './components/section-clients';
+
+// portfolio.html
+@import './components/portfolio__filters';
+@import './components/portfolio-cards';
+
+@import './components/modals';
+@import './layout/footer';
+
+@import './components/visually-hidden';

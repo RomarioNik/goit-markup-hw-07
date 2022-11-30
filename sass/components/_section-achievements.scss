@@ -1,0 +1,46 @@
+/* --------- achievements ------------- */
+
+// .achievements {
+// }
+
+.achievements__list {
+  display: flex;
+  margin: -15px;
+}
+
+.achievements__item {
+  width: calc((100% - 90px) / 4);
+  margin: 15px;
+}
+
+// .benefit {
+// }
+
+.benefit__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+// .benefit__icons {
+// }
+
+// .benefit__icon-antenna {
+// }
+
+.benefit__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: $header-color;
+  text-transform: uppercase;
+}
+
+// .benefit__text {
+// }
